@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* .container {
+  display: grid;
+} */
+.books-container {
+  display: grid;
+  grid-template-columns: 10vw 15vw 15vw 15vw 15vw;
+}
+
+input {
+  font-style: italic;
+}
+
+.add-book-click.finish-adding {
+  background-color: chartreuse;
+}
+
+.delete {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  cursor: default;
+}
+
+.delete.active {
+  background-color: indianred;
+  opacity: 1;
+  cursor: pointer;
+}
+.delete.active.to-be-deleted {
+  background-color: hotpink;
+  color: beige;
+}
+.remove-book {
+  background-color: rosybrown;
+}
+.remove-book.delete-mode {
+  background-color: red;
+  color: white;
+}
+
+.title,
+.author,
+.number-of-pages,
+.is-read {
+  border: 1px solid black;
+}
